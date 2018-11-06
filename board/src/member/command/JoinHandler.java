@@ -1,4 +1,4 @@
-package mvc.command;
+package member.command;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +20,7 @@ public class JoinHandler implements CommandHandler {
 	public String process(HttpServletRequest req,HttpServletResponse res) {
 		if(req.getMethod().equalsIgnoreCase("GET")) {
 			return processForm(req,res);
-		} else if(req.getMethod().equalsIgnoreCase("GET")) {
+		} else if(req.getMethod().equalsIgnoreCase("POST")) {
 			return processSubmit(req,res);
 		} else {
 			res.setStatus(HttpServletResponse.SC_METHOD_NOT_ALLOWED);
