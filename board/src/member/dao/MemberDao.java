@@ -59,4 +59,5 @@ public class MemberDao {
 			pstmt.executeUpdate();
 		}
 	}
+	
 }
